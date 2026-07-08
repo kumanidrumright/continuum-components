@@ -4,19 +4,22 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Continuum Components | Component Lifecycle Intelligence</title>
-  <meta name="description" content="Continuum Components helps manufacturers reduce BOM risk, manage obsolescence, and improve component lifecycle visibility." />
+  <meta name="description" content="Continuum Components helps manufacturers reduce BOM risk, manage obsolescence, identify alternates, and improve component lifecycle visibility." />
+  <meta property="og:title" content="Continuum Components | Component Lifecycle Intelligence" />
+  <meta property="og:description" content="Helping manufacturers eliminate BOM risk before it becomes expensive." />
+  <meta property="og:type" content="website" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
   <header class="site-header">
     <div class="container nav">
-      <div class="brand">
-        <div class="mark">CC</div>
-        <div>
-          <strong>Continuum Components</strong>
-          <span>Component Lifecycle Intelligence</span>
-        </div>
-      </div>
+      <a class="brand" href="#top" aria-label="Continuum Components home">
+        <span class="brand-mark">CC</span>
+        <span><strong>Continuum Components</strong><small>Component Lifecycle Intelligence</small></span>
+      </a>
       <nav>
         <a href="#services">Services</a>
         <a href="#industries">Industries</a>
@@ -26,82 +29,118 @@
     </div>
   </header>
 
-  <main>
+  <main id="top">
     <section class="hero">
       <div class="container hero-grid">
-        <div>
-          <p class="eyebrow">BOM Risk • Obsolescence • Supply Chain Visibility</p>
-          <h1>Component Lifecycle Intelligence for manufacturers.</h1>
-          <p class="hero-text">Continuum Components helps manufacturing teams identify component risk, clean up complex bills of material, and make better sourcing decisions before small issues become expensive disruptions.</p>
+        <div class="hero-copy">
+          <p class="eyebrow">BOM Risk • Obsolescence • Lifecycle Intelligence</p>
+          <h1>Component lifecycle intelligence for manufacturers.</h1>
+          <p class="lead">Continuum Components helps manufacturing teams clean up complex BOMs, surface obsolete and high-risk components, identify practical alternates, and make better supply chain decisions before problems become expensive.</p>
           <div class="hero-actions">
-            <a class="button primary" href="mailto:hello@continuumcomponents.com?subject=BOM Risk Assessment">Request a BOM Risk Assessment</a>
-            <a class="button secondary" href="#services">Explore Services</a>
+            <a class="button primary" href="#contact">Schedule a BOM Risk Assessment</a>
+            <a class="button secondary" href="#services">View Services</a>
+          </div>
+          <div class="trust-row">
+            <span>Built for procurement</span>
+            <span>Engineering</span>
+            <span>Operations</span>
           </div>
         </div>
-        <div class="hero-card">
-          <h2>Where risk hides</h2>
-          <ul>
-            <li>Obsolete or end-of-life components</li>
-            <li>Single-source dependencies</li>
-            <li>Unclear alternates and replacements</li>
-            <li>Messy manufacturer part data</li>
-            <li>Disconnected engineering and supply chain records</li>
-          </ul>
+        <div class="hero-card" aria-label="Lifecycle intelligence summary">
+          <div class="card-header">
+            <span class="pulse"></span>
+            <span>Lifecycle Risk Snapshot</span>
+          </div>
+          <div class="metric"><span>BOM Visibility</span><strong>Improved</strong></div>
+          <div class="metric"><span>Obsolescence Exposure</span><strong>Flagged Early</strong></div>
+          <div class="metric"><span>Alternate Options</span><strong>Identified</strong></div>
+          <div class="metric"><span>Supply Chain Decisions</span><strong>Data-Driven</strong></div>
         </div>
       </div>
     </section>
 
-    <section id="services" class="section">
+    <section class="section intro">
+      <div class="container intro-grid">
+        <div>
+          <p class="eyebrow">The problem</p>
+          <h2>Most BOM risk is discovered too late.</h2>
+        </div>
+        <p>Manufacturers often find component issues after a quote is late, a build is delayed, inventory is stranded, or engineering is forced into a reactive redesign. Continuum Components brings structure, visibility, and disciplined analysis to the component lifecycle before those issues disrupt the business.</p>
+      </div>
+    </section>
+
+    <section class="section services" id="services">
       <div class="container">
-        <p class="eyebrow">Services</p>
-        <h2>Practical support for complex component decisions.</h2>
+        <div class="section-heading">
+          <p class="eyebrow">Services</p>
+          <h2>Lifecycle support for complex component decisions.</h2>
+        </div>
         <div class="cards">
-          <article class="card"><h3>BOM Scrubbing</h3><p>Clean, normalize, and review bills of material to improve part-level accuracy and expose risk.</p></article>
-          <article class="card"><h3>Obsolescence Analysis</h3><p>Identify lifecycle concerns, end-of-life exposure, and replacement planning needs.</p></article>
-          <article class="card"><h3>Alternate Component Research</h3><p>Support engineering and procurement teams with structured alternate and cross-reference reviews.</p></article>
-          <article class="card"><h3>Inventory Risk Assessment</h3><p>Connect component risk to inventory, demand, and supply chain decision-making.</p></article>
-          <article class="card"><h3>Lifecycle Management</h3><p>Create repeatable processes for monitoring, reviewing, and acting on component lifecycle changes.</p></article>
-          <article class="card"><h3>Supply Chain Consulting</h3><p>Improve visibility between purchasing, planning, engineering, and operations.</p></article>
+          <article class="service-card"><h3>BOM Scrubbing</h3><p>Clean, normalize, and review bills of material to expose missing data, inconsistent part numbers, sourcing concerns, and lifecycle gaps.</p></article>
+          <article class="service-card"><h3>Obsolescence Risk Assessment</h3><p>Identify end-of-life exposure, single-source risk, aging components, and supply continuity concerns before they become urgent.</p></article>
+          <article class="service-card"><h3>Alternate Component Identification</h3><p>Support engineering and procurement teams with structured alternate searches, fit-for-purpose options, and supplier availability review.</p></article>
+          <article class="service-card"><h3>Component Lifecycle Management</h3><p>Create repeatable processes for lifecycle review, change control, documentation, and cross-functional decision making.</p></article>
+          <article class="service-card"><h3>Supply Chain Intelligence</h3><p>Translate component-level data into practical actions for purchasing, inventory, quoting, and production planning.</p></article>
+          <article class="service-card"><h3>S&OP and Materials Support</h3><p>Connect component risk to the broader operating rhythm: demand planning, supply planning, inventory strategy, and execution.</p></article>
         </div>
       </div>
     </section>
 
-    <section id="industries" class="section alt">
+    <section class="section process">
+      <div class="container">
+        <div class="section-heading centered">
+          <p class="eyebrow">Approach</p>
+          <h2>A practical path from messy data to confident decisions.</h2>
+        </div>
+        <div class="steps">
+          <div><span>01</span><h3>Assess</h3><p>Review BOM structure, component data quality, sourcing constraints, and known pain points.</p></div>
+          <div><span>02</span><h3>Prioritize</h3><p>Rank the highest-risk items by lifecycle status, availability, sourcing exposure, and business impact.</p></div>
+          <div><span>03</span><h3>Resolve</h3><p>Identify alternates, escalation paths, inventory actions, and process improvements.</p></div>
+          <div><span>04</span><h3>Sustain</h3><p>Create repeatable lifecycle review practices so risk is managed continuously, not reactively.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section industries" id="industries">
       <div class="container split">
         <div>
           <p class="eyebrow">Industries</p>
-          <h2>Built for manufacturers with complex products and long lifecycles.</h2>
+          <h2>Built for manufacturers where component choices matter.</h2>
+          <p>Continuum Components supports organizations that depend on long-lived products, stable supply, clean data, and disciplined decision-making across procurement, engineering, operations, and finance.</p>
         </div>
-        <div class="pill-list">
-          <span>Industrial Manufacturing</span><span>Electronics</span><span>Automation</span><span>Medical Devices</span><span>Aerospace</span><span>Defense</span>
+        <div class="industry-list">
+          <span>Industrial Manufacturing</span><span>Electronics</span><span>Automation</span><span>Medical Devices</span><span>Aerospace</span><span>Defense</span><span>Contract Manufacturing</span><span>Engineered Products</span>
         </div>
       </div>
     </section>
 
-    <section id="about" class="section">
-      <div class="container split">
+    <section class="section about" id="about">
+      <div class="container about-card">
         <div>
           <p class="eyebrow">About</p>
-          <h2>Experienced supply chain thinking for component-level risk.</h2>
+          <h2>Supply chain discipline meets component-level detail.</h2>
         </div>
-        <p class="large">Continuum Components brings manufacturing, materials management, procurement, S&OP, inventory optimization, and engineering collaboration together into one practical approach: helping companies understand what is in their BOMs, where the risk is, and what to do next.</p>
+        <div>
+          <p>Continuum Components was created to help manufacturers reduce avoidable risk in the parts, data, and decisions that keep products moving. The work is grounded in practical manufacturing experience across materials management, S&OP, procurement, inventory optimization, ERP coordination, and cross-functional collaboration with engineering and operations.</p>
+          <p>The goal is simple: help teams see risk earlier, make decisions faster, and build a more reliable component lifecycle process.</p>
+        </div>
       </div>
     </section>
 
-    <section id="contact" class="section contact">
-      <div class="container contact-box">
+    <section class="section cta" id="contact">
+      <div class="container cta-card">
         <p class="eyebrow">Start here</p>
-        <h2>Request a complimentary BOM health check.</h2>
-        <p>Send a note and we’ll discuss your component risk, obsolescence exposure, or BOM cleanup needs.</p>
-        <a class="button primary" href="mailto:hello@continuumcomponents.com?subject=BOM Health Check Request">Email Continuum Components</a>
+        <h2>Ready to understand the risk inside your BOM?</h2>
+        <p>Begin with a focused BOM risk conversation. We’ll review what you’re trying to solve, where component issues are showing up, and what a practical first assessment could look like.</p>
+        <a class="button primary light" href="mailto:kumanidrumright@me.com?subject=Continuum%20Components%20BOM%20Risk%20Assessment">Email Continuum Components</a>
       </div>
     </section>
   </main>
 
-  <footer>
+  <footer class="site-footer">
     <div class="container footer-grid">
-      <p>© 2026 Continuum Components. All rights reserved.</p>
-      <p>Component Lifecycle Intelligence</p>
+      <div><strong>Continuum Components</strong><p>Component Lifecycle Intelligence for Manufacturers.</p></div>
+      <div><a href="#services">Services</a><a href="#industries">Industries</a><a href="#about">About</a><a href="#contact">Contact</a></div>
     </div>
   </footer>
 </body>
